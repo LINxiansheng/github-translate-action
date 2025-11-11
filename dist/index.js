@@ -92,11 +92,7 @@ function main() {
                 translateTitle;
             const body = translateComment &&
                 originComment !== translateComment &&
-                `
-${TRANSLATE_DIVIDING_LINE}
----
-${translateComment}
-`;
+                `${translateComment}`;
             yield update(octokit, body || undefined, title || undefined);
         }
         else {

@@ -60,11 +60,7 @@ async function main(): Promise<void> {
     const body =
       translateComment &&
       originComment !== translateComment &&
-      `
-${TRANSLATE_DIVIDING_LINE}
----
-${translateComment}
-`
+      `${translateComment}`
     await update(octokit, body || undefined, title || undefined)
   } else {
     const needCommitComment =
