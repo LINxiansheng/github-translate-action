@@ -60,7 +60,7 @@ async function main(): Promise<void> {
     const body =
       translateComment &&
       originComment !== translateComment &&
-      `${originComment}
+      `
 ${TRANSLATE_DIVIDING_LINE}
 ---
 ${translateComment}

@@ -92,7 +92,7 @@ function main() {
                 translateTitle;
             const body = translateComment &&
                 originComment !== translateComment &&
-                `${originComment}
+                `
 ${TRANSLATE_DIVIDING_LINE}
 ---
 ${translateComment}
