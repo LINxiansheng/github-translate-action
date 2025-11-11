@@ -89,7 +89,7 @@ function main() {
         if (shouldAppendContent) {
             const title = translateTitle &&
                 originTitle !== translateTitle &&
-                [originTitle, translateTitle].join(TRANSLATE_TITLE_DIVING);
+                translateTitle;
             const body = translateComment &&
                 originComment !== translateComment &&
                 `${originComment}
